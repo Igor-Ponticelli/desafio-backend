@@ -1,0 +1,23 @@
+{
+  "name": "desafio-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch --no-warnings server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@prisma/client": "^6.6.0",
+    "fastify": "^5.2.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  }
+}
