@@ -21,14 +21,16 @@ model Usuario {
 }
 
 model Cobranca {
-  id          Int      @id @default(autoincrement())
-  cliente     Cliente  @relation(fields: [clienteId], references: [id])
-  clienteId   Int
-  valor       Float
-  status      String
-  metodoEnvio String
-  criadaEm    DateTime @default(now())
+  id             Int      @id @default(autoincrement())
+  clienteId      Int
+  cliente        Cliente  @relation(fields: [clienteId], references: [id])
+  valor          Float
+  dataVencimento DateTime
+  metodoEnvio    String
+  status         String
+  createdAt      DateTime @default(now())
 }
+
 
 model Cliente {
   id        Int        @id @default(autoincrement())
