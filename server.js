@@ -17,6 +17,9 @@ import authRoutes from './routes/auth.js'
 import clienteRoutes from './routes/clientes.js'
 import cobrancaRoutes from './routes/cobrancas.js'
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const server = fastify({ logger: true })
 
 server.register(cobrancaRoutes)
